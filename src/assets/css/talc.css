@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'FKDisplayTrial-Regular';
-    src: url(./assets/fonts/FKDisplayTrial-Regular.otf) format('opentype');
+    src: url(/assets/fonts/FKDisplayTrial-Regular.otf) format('opentype');
 }
 
 @font-face {
     font-family: 'ABCReproMono';
-    src: url(./assets/fonts/ABCReproMono/ABCReproMono-Regular-Trial.woff) format('woff2'),
-        url(./assets/fonts/ABCReproMono/ABCReproMono-Regular-Trial.otf) format('otf'),
-        url(./assets/fonts/ABCReproMono/ABCReproMono-Regular-Trial.woff) format('woff');
+    src: url(/assets/fonts/ABCReproMono/ABCReproMono-Regular-Trial.woff) format('woff2'),
+        url(/assets/fonts/ABCReproMono/ABCReproMono-Regular-Trial.otf) format('otf'),
+        url(/assets/fonts/ABCReproMono/ABCReproMono-Regular-Trial.woff) format('woff');
 }
 
 @font-face {
     font-family: 'ABCReproMonoMedium';
-    src: url(./assets/fonts/ABCReproMono/ABCReproMono-Light-Trial.woff) format('woff2'),
-        url(./assets/fonts/ABCReproMono/ABCReproMono-Light-Trial.otf) format('otf'),
-        url(./assets/fonts/ABCReproMono/ABCReproMono-Light-Trial.woff) format('woff');
+    src: url(/assets/fonts/ABCReproMono/ABCReproMono-Light-Trial.woff) format('woff2'),
+        url(/assets/fonts/ABCReproMono/ABCReproMono-Light-Trial.otf) format('otf'),
+        url(/assets/fonts/ABCReproMono/ABCReproMono-Light-Trial.woff) format('woff');
 }
 
 * {
@@ -22,14 +22,13 @@
 }
 
 body {
-    background-color: #F2EEE8;
+    background-color: #FFF;
     margin: 0;
 
     --display-font: 'FKDisplayTrial-Regular';
     --mono-font: 'ABCReproMonoMedium', 'Courier New', Courier, monospace;
     --text-font: sans-serif;
     --primary-color: #FFAC8A;
-    --sand: #F2EEE8;
 }
 
 body.no-scroll {
@@ -78,10 +77,10 @@ ul.unlist {
 /* header */
 .site-header {
     margin-top: 25px;
-    margin-bottom: 35px;
+    margin-bottom: 65px;
 }
 
-.topbar {
+.topbar .container {
     justify-content: space-between;
     align-items: center;
 }
@@ -101,10 +100,42 @@ ul.unlist {
     margin-top: 10px;
 }
 
+.main-navigation {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 76px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 40px;
+    overflow-y: scroll;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.main-navigation.show {
+    display: block;
+}
+.main-navigation li a {
+    text-decoration: none;
+    font-family: var(--display-font);
+    font-size: 220px;
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+}
+
 .menu-icon.open .line:first-child {
     transform: rotate(45deg) translate(9px, 18px);
 }
 
 .menu-icon.open .line:last-child {
     transform: rotate(-45deg) translate(-10px, 0px);
+}
+
+.featured-image {
+    margin: 0;
+    text-align: center;
 }
