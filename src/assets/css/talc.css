@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'FKDisplayTrial-Regular';
+    src: url(./assets/fonts/FKDisplayTrial-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'ABCReproMono';
+    src: url(./assets/fonts/ABCReproMono/ABCReproMono-Regular-Trial.woff) format('woff2'),
+        url(./assets/fonts/ABCReproMono/ABCReproMono-Regular-Trial.otf) format('otf'),
+        url(./assets/fonts/ABCReproMono/ABCReproMono-Regular-Trial.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'ABCReproMonoMedium';
+    src: url(./assets/fonts/ABCReproMono/ABCReproMono-Light-Trial.woff) format('woff2'),
+        url(./assets/fonts/ABCReproMono/ABCReproMono-Light-Trial.otf) format('otf'),
+        url(./assets/fonts/ABCReproMono/ABCReproMono-Light-Trial.woff) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2EEE8;
+    margin: 0;
+
+    --display-font: 'FKDisplayTrial-Regular';
+    --mono-font: 'ABCReproMonoMedium', 'Courier New', Courier, monospace;
+    --text-font: sans-serif;
+    --primary-color: #FFAC8A;
+    --sand: #F2EEE8;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+header,
+main,
+footer {
+    padding: 0 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+h1,
+h2 {
+    font-size: 72px;
+    font-family: var(--display-font);
+    font-weight: 400;
+    line-height: 86.4px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* helpers */
+ul.unlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* layout */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+
+/* header */
+.site-header {
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.topbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header a.logo {
+    display: block;
+}
+
+.line {
+    display: block;
+    width: 53px;
+    height: 2px;
+    background-color: #000;
+}
+
+.line + .line {
+    margin-top: 10px;
+}
+
+.menu-icon.open .line:first-child {
+    transform: rotate(45deg) translate(9px, 18px);
+}
+
+.menu-icon.open .line:last-child {
+    transform: rotate(-45deg) translate(-10px, 0px);
+}
