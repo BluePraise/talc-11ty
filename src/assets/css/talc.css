@@ -118,11 +118,14 @@ ul.unlist {
     display: block;
 }
 .main-navigation li a {
+    display: block;
     text-decoration: none;
     font-family: var(--display-font);
     font-size: 220px;
 }
-
+.menu-icon {
+    display: block;
+}
 .menu-icon:hover {
     cursor: pointer;
 }
