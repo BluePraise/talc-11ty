@@ -1,7 +1,21 @@
 ---
 layout: base.njk
 pagename: projects
-title: Talc's project
+pageTitle: Talc's project
 ---
+<div class="container-xs">
 
-<h1>This is the project page</h1>
+{%- for item in collections.projects -%}
+
+        <ul class="project-slider">
+            {%- for image in collections.projectslider -%}
+                <li>
+                    <img src="{{image.url}}" alt="{{image.data.alt}}" class="project-image">
+                <li>
+            {%- endfor -%}
+        </ul>
+
+    <h2 class="project-title">{{item.data.title}}</h2>
+    <p class="project-description">{{item.data.description}}</p>
+{%- endfor -%}
+</div>
