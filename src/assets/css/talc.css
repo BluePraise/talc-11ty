@@ -70,6 +70,10 @@ ul.unlist {
     max-width: 1440px;
     margin: 0 auto;
 }
+.container-xs {
+    max-width: 940px;
+    margin: 0 auto;
+}
 .flex {
     display: flex;
 }
@@ -80,7 +84,7 @@ ul.unlist {
     margin-bottom: 65px;
 }
 
-.topbar .container {
+.topbar.flex {
     justify-content: space-between;
     align-items: center;
 }
@@ -141,4 +145,16 @@ ul.unlist {
 .featured-image {
     margin: 0;
     text-align: center;
+}
+
+h2.project-title {
+    font-family: var(--display-font);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.project-description {
+    font-family: var(--display-font);
+    max-width: 630px;
 }
