@@ -1,6 +1,8 @@
+const EleventyFetch = require("@11ty/eleventy-fetch");
 
 
 module.exports = function (eleventyConfig) {
+    // let url = "https://api.github.com/repos/11ty/eleventy";
     eleventyConfig.setServerOptions({ showVersion: true })
     // move css and jpg to output folder
     eleventyConfig.addPassthroughCopy("src/assets/")
