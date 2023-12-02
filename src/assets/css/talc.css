@@ -173,7 +173,7 @@ ul.unlist {
 }
 
 .project-slider {
-    height: 500px;
+    height: auto;
     position: relative;
     overflow: hidden;
 }
