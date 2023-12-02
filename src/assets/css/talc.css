@@ -45,7 +45,7 @@ footer {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 h1,
@@ -168,15 +168,47 @@ ul.unlist {
     text-align: center;
 }
 
-.swiper {
-    width: 940px;
+.project-container {
+    position: relative;
+}
+
+.project-slider {
     height: 500px;
+    position: relative;
+    overflow: hidden;
 }
 .swiper-slide {
+    z-index: 1;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.swiper-nav {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    text-indent: -99999px;
+}
+
+.swiper-prev {
+    left: 0;
+    cursor: url('/assets/images/arrow-prev.svg'), auto;
+}
+
+.swiper-next {
+    right: 0;
+    cursor: url('/assets/images/arrow-next.svg'), auto;
+}
+
+.swiper-nav svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform-origin: center
 }
 
 .project-description {

@@ -5,8 +5,8 @@ pageTitle: Talc's project
 ---
 {%- for item in collections.projects -%}
     {%- if item.data.imageGallery | length > 1 -%}
-  <div class="project-container container-xs">
-      <div class="project-slider swiper">
+  <div class="project-container container-xs" data-slider="{{item.data.title}}">
+      <div class="project-slider">
 
           <div class="swiper-wrapper">
 
@@ -25,11 +25,12 @@ pageTitle: Talc's project
             {%- endif -%}
 
           </div>
-
-          <!-- navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
     </div>
+    <!-- navigation buttons -->
+
+    <div class="swiper-nav swiper-prev"></div>
+    <div class="swiper-nav swiper-next"></div>
+
     <div class="project-info">
       <h2 class="project-title">{{item.data.title}}</h2>
       <p class="project-description">{{item.data.description}}</p>
