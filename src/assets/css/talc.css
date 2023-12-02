@@ -227,3 +227,23 @@ h2.project-title {
     max-width: 630px;
     line-height: 120%;
 }
+
+body.about-us {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+body.about-us main {
+    flex-grow: 1;
+}
+
+body.about-us p.about-uppercase {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #837FD2;
+    font-family: var(--display-font);
+}
+footer.bottombar {
+    padding: 40px;
+    margin: 0;
+}
