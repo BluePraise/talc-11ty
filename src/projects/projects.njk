@@ -3,19 +3,38 @@ layout: base.njk
 pagename: projects
 pageTitle: Talc's project
 ---
-<div class="container-xs">
-
 {%- for item in collections.projects -%}
+    {%- if item.data.imageGallery | length > 1 -%}
+  <div class="project-container container-xs">
+      <div class="project-slider swiper">
 
-        <ul class="project-slider">
-            {%- for image in collections.projectslider -%}
-                <li>
-                    <img src="{{image.url}}" alt="{{image.data.alt}}" class="project-image">
-                <li>
-            {%- endfor -%}
-        </ul>
+          <div class="swiper-wrapper">
 
-    <h2 class="project-title">{{item.data.title}}</h2>
-    <p class="project-description">{{item.data.description}}</p>
-{%- endfor -%}
+            {%- set stopLoop = false -%}
+            {%- if not stopLoop -%}
+              {%- for image in item.data.imageGallery -%}
+
+                  <div class="swiper-slide">
+                      <img src="{{ image }}" alt="{{ item.data.title }}" data-image="{{ loop.index }}">
+                  </div>
+
+                  {%- if loop.last -%}
+                      {%- set stopLoop = true -%}
+                  {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+
+          </div>
+
+          <!-- navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+    </div>
+    <div class="project-info">
+      <h2 class="project-title">{{item.data.title}}</h2>
+      <p class="project-description">{{item.data.description}}</p>
+    </div>
 </div>
+  {%- endif -%}
+
+{%- endfor -%}

@@ -147,6 +147,17 @@ ul.unlist {
     text-align: center;
 }
 
+.swiper {
+    width: 940px;
+    height: 500px;
+}
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h2.project-title {
     font-family: var(--display-font);
     font-weight: 600;
@@ -155,6 +166,7 @@ h2.project-title {
 }
 
 .project-description {
-    font-family: var(--display-font);
+    font-family: var(--mono-font);
     max-width: 630px;
+    line-height: 120%;
 }
