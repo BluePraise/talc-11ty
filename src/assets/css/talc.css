@@ -29,6 +29,7 @@ body {
     --mono-font: 'ABCReproMonoMedium', 'Courier New', Courier, monospace;
     --text-font: sans-serif;
     --primary-color: #FFAC8A;
+
 }
 
 body.no-scroll {
@@ -141,7 +142,27 @@ ul.unlist {
 .menu-icon.open .line:last-child {
     transform: rotate(-45deg) translate(-10px, 0px);
 }
+.bottombar {
+    color: #000;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--display-font);
+    padding: 20px 0;
+    margin: 60px 0;
+}
+.bottombar p {
+    display: block;
+    margin: 0;
+}
+.bottombar a {
+    display: block;
+    color: #000;
+    font-family: var(--display-font);
+    text-decoration: none;
+}
 
+/* Projects. */
 .featured-image {
     margin: 0;
     text-align: center;
