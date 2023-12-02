@@ -158,6 +158,10 @@ ul.unlist {
     align-items: center;
 }
 
+.project-description {
+    margin-bottom: 120px;
+}
+
 h2.project-title {
     font-family: var(--display-font);
     font-weight: 600;
