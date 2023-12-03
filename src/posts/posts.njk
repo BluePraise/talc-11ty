@@ -1,0 +1,21 @@
+---
+layout: base.njk
+pagename: posts
+pageTitle: Talc's Journal
+---
+
+<div class="container-xs">
+    {% for item in collections.posts %}
+        <div class="post">
+            {% if item.data.featuredImage %}
+                <img class="post-featured-image" src="{{item.data.featuredImage}}" alt="{{item.data.title}}">
+            {% endif %}
+            {% if item.data.date %}
+                <div class="post-date">{{item.data.date | postDate }}</div>
+            {% endif %}
+            <h2 class="post-title">{{item.data.title}}</h2>
+            <p class="post-content">{{ item.content | safe }}</p>
+        </div>
+    {% endfor %}
+
+</div>
