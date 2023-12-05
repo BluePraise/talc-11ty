@@ -31,7 +31,13 @@ body {
     --display-font: 'FKDisplayTrial-Regular';
     --mono-font: 'ABCReproMonoMedium', 'Courier New', Courier, monospace;
     --text-font: sans-serif;
-    --primary-color: #FFAC8A;
+
+    --salmon: #FFCCBE;
+    --red: #E43F17;
+    --darkgreen: #024D52;
+    --violet: #A4A0FF;
+    --gold: #CB8232;
+    --bordeaux: #A0505D;
 
 }
 
@@ -259,6 +265,29 @@ body.about-us p.about-uppercase {
     font-family: var(--mono-font);
     font-size: 16px;
 }
+
+/* press */
+.press-item + .press-item {
+    border-top: 1px solid #000;
+    margin-top: 80px;
+}
+.press-link {
+    text-decoration: none;
+}
+.press-title {
+    font-size: 170px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.press-meta {
+    display: block;
+    font-family: var(--mono-font);
+    text-transform: uppercase;
+    text-align: right;
+}
+
+
 footer.bottombar {
     padding: 40px;
     margin: 0;
