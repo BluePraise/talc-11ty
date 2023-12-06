@@ -362,3 +362,26 @@ footer.bottombar {
     padding: 40px;
     margin: 0;
 }
+
+/* A random media size */
+@media (max-width: 543px) {
+    .contact-page-title {
+        text-align: left;
+    }
+    .form-controls .flex:not(.terms) {
+        flex-direction: column;
+    }
+    .form-controls .flex + .flex {
+        margin-top: 0; /*reset*/
+    }
+    .form-controls .flex .input-group {
+        width: 100%;
+    }
+    .input-group  {
+        margin-top: 30px;
+    }
+    .flex.terms {
+        justify-content: flex-start;
+    }
+
+}
