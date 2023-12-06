@@ -142,7 +142,8 @@ ul.unlist {
     display: block;
     text-decoration: none;
     font-family: var(--display-font);
-    font-size: 220px;
+    /* font-size: 220px; */
+    font-size: 18vw;
 }
 .menu-icon {
     display: block;
@@ -244,9 +245,6 @@ h2.project-title {
     line-height: 120%;
 }
 
-body.about-us main {
-
-}
 
 body.about-us p.about-uppercase {
     font-size: 3em;
@@ -255,6 +253,9 @@ body.about-us p.about-uppercase {
     font-family: var(--display-font);
 }
 /*posts*/
+.post + .post {
+    margin-top: 60px;
+}
 .post-featured-image {
     margin-bottom: 45px;
 }
@@ -280,7 +281,7 @@ body.about-us p.about-uppercase {
     text-decoration: none;
 }
 .press-title {
-    font-size: 170px;
+    font-size: 10vw;
     line-height: 1;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -288,6 +289,7 @@ body.about-us p.about-uppercase {
 .press-meta {
     display: block;
     font-family: var(--mono-font);
+    font-weight: 800;
     text-transform: uppercase;
     text-align: right;
 }
@@ -365,6 +367,24 @@ footer.bottombar {
 
 /* A random media size */
 @media (max-width: 543px) {
+    .homepage .featured-image img {
+        max-width: 150vw;
+    }
+    .homepage main,
+    .projects main {
+        padding: 0;
+    }
+    .project-info {
+        padding: 0 20px;
+    }
+    .press-meta {
+        margin-top: 60px;
+        text-align: left;
+        font-size: 12px;
+    }
+    .press-item+.press-item {
+        margin-top: 0;
+    }
     .contact-page-title {
         text-align: left;
     }
