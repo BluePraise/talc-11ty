@@ -1,5 +1,5 @@
 # talc-11ty
-A portfolio website for Talc Studio
+A portfolio website for Talc Studio built with 11ty.
 
 ## Developer
 Magalie Chetrit (I like to be called Magalie)
@@ -17,7 +17,7 @@ Make sure you have the required node environment installed.
 This page is deployed on [Netlify](https://www.netlify.com/). It is automatically deployed when a new commit is pushed to the `main` branch.
 
 ## Built With
-This page is built with [11ty](https://www.11ty.dev/), a static site generator. It uses [Nunjucks](https://mozilla.github.io/nunjucks/) as a templating engine. Animated with Wow.js and Animate.css.
+This page is built with [11ty](https://www.11ty.dev/), a static site generator. It uses [Nunjucks](https://mozilla.github.io/nunjucks/) as a templating engine. -Animated with Wow.js and Animate.css-.
 
 ## Specifications
 I've added a classname to each page/template.
@@ -27,13 +27,13 @@ I've added a classname to each page/template.
 - [ ] Main Navigation
     - [ ] A11y
     - [ ] Keyboard events
-    - [ ] Mobile menu
+    - [x] Mobile menu
     - [ ] Animate
     - [ ] Active state
-- [ ] About page
-- [ ] Contact page
-- [ ] Add a blog (Journal)
-- [ ] Add press
-- [ ] Make a collection for project slider
+- [x] About page
+- [x] Contact page
+- [x] Add a blog (Journal)
+- [x] Add press
+- [ ] -Make a collection for project slider- (not needed)
 - [ ] Add a favicon
 - [ ] Add a 404 page
