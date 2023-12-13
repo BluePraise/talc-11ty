@@ -34,6 +34,6 @@ I've added a classname to each page/template.
 - [x] Contact page
 - [x] Add a blog (Journal)
 - [x] Add press
-- [ ] -Make a collection for project slider- (not needed)
+- [ ] ˜Make a collection for project slider˜ (not needed)
 - [ ] Add a favicon
 - [ ] Add a 404 page
