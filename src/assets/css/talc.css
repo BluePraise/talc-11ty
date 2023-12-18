@@ -145,6 +145,9 @@ ul.unlist {
     /* font-size: 220px; */
     font-size: 18vw;
 }
+.main-navigation li a:hover {
+    color: #000 !important;
+}
 .menu-icon {
     display: block;
 }
@@ -279,6 +282,9 @@ body.about-us p.about-uppercase {
 }
 .press-link {
     text-decoration: none;
+}
+.press-link:hover {
+    color: #000 !important;
 }
 .press-title {
     font-size: 10vw;
