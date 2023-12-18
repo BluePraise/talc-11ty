@@ -11,7 +11,8 @@ pageTitle: Talc's Journal
                 <img class="post-featured-image" src="{{item.data.featuredImage}}" alt="{{item.data.title}}">
             {% endif %}
             {% if item.data.date %}
-                <div class="post-date">{{item.data.date | postDate }}</div>
+                {% set newDate = item.data.date %}
+                <div class="post-date"><time>{{ newDate | postDate }}</time></div>
             {% endif %}
             <h2 class="post-title">{{item.data.title}}</h2>
             <p class="post-content">{{ item.content | safe }}</p>

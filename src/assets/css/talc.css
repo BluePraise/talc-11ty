@@ -297,7 +297,7 @@ body.about-us p.about-uppercase {
 /* Contact */
 .contact-page-title {
     display: block;
-    text-align: center;
+    margin-left: -5px; /* a hack */
     color: var(--red);
     font-family: var(--display-font);
     font-size: 64px;
@@ -367,6 +367,9 @@ footer.bottombar {
 
 /* A random media size */
 @media (max-width: 543px) {
+    header, main {
+        padding: 0 20px;
+    }
     .homepage .featured-image img {
         max-width: 150vw;
     }
@@ -402,6 +405,14 @@ footer.bottombar {
     }
     .flex.terms {
         justify-content: flex-start;
+    }
+    body.about-us p.about-uppercase {
+        font-size: 18px;
+        line-height: 1.4;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        color: #837FD2;
+        font-family: var(--display-font);
     }
 
 }
