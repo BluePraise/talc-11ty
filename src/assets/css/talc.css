@@ -236,6 +236,7 @@ ul.unlist {
 }
 
 h2.project-title {
+    font-size: 14px;
     font-family: var(--display-font);
     font-weight: 600;
     font-size: 16px;
@@ -243,6 +244,7 @@ h2.project-title {
 }
 
 .project-description {
+    font-size: 14px;
     font-family: var(--mono-font);
     max-width: 630px;
     line-height: 120%;
